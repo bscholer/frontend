@@ -34,23 +34,47 @@
 <body>
 <!--TODO make this menu work-->
 <!--<div id="header" class="container">-->
-    <!--<ul>-->
-        <!--<li id="menu-home"><a class="link" href="?#home">Home</a></li>-->
-        <!--<li id="menu-about"><a class="link" href="?#about">About</a></li>-->
-        <!--<li id="menu-league-info"><a class="link" href="?#league-info">League Info</a></li>-->
-        <!--<li id="menu-register"><a class="link" href="?#register">Register</a></li>-->
-        <!--<li id="menu-tournaments"><a class="link" href="?#tournaments">Tournaments</a></li>-->
-        <!--<hr/>-->
-    <!--</ul>-->
+<!--<ul>-->
+<!--<li id="menu-home"><a class="link" href="?#home">Home</a></li>-->
+<!--<li id="menu-about"><a class="link" href="?#about">About</a></li>-->
+<!--<li id="menu-league-info"><a class="link" href="?#league-info">League Info</a></li>-->
+<!--<li id="menu-register"><a class="link" href="?#register">Register</a></li>-->
+<!--<li id="menu-tournaments"><a class="link" href="?#tournaments">Tournaments</a></li>-->
+<!--<hr/>-->
+<!--</ul>-->
 <!--</div>-->
 <div id="fullpage">
 
     <div class="section anchor" id="home">
-        <div class="slide" id="slide1">
-            <h1>Volleyball of the Midwest</h1>
+        <!--<h1>Volleyball of the Midwest</h1>-->
+        <div id="slide1" class="slideshow_slide">
+            <img src="imgs/volleyball1.jpg">
         </div>
-        <div class="slide" id="slide2">
-            <h1>Volleyball of the Midwest</h1>
+
+        <div id="slide2" class="slideshow_slide">
+            <img src="imgs/volleyball2.jpg">
+        </div>
+
+        <div id="slide3" class="slideshow_slide">
+            <img src="imgs/volleyball3.jpg">
+        </div>
+
+        <div id="slide4" class="slideshow_slide">
+            <img src="imgs/volleyball4.jpg">
+        </div>
+
+        <div id="slide5" class="slideshow_slide">
+            <img src="imgs/volleyball5.jpg">
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
         </div>
     </div>
 
@@ -146,6 +170,7 @@
     <!-- Return to Top -->
     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 </div>
+<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
     var handler = StripeCheckout.configure({
         key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
