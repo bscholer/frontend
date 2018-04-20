@@ -29,6 +29,7 @@ h1 {
 
 .slide {
     background-size: cover;
+    background-position: center center;
 }
 
 /* Top Menu
@@ -88,12 +89,27 @@ hr {
 
 #home h1 {
     position: relative;
+    color: #FFFFFF;
+    background: inherit;
+    background-attachment: fixed;
 }
 
+#home h1::before {
+    background: inherit;
+    background-attachment: fixed;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+}
 /* About
 * --------------------------------------- */
 #about {
     background-color: #4ABDAC;
+}
+
+#about-parent {
+    width: 80%;
+
+    display: inline-block;
 }
 
 #about h1 {
@@ -141,40 +157,27 @@ hr {
     top: calc((100% - 80%) / 2);
 }
 
-/* Slideshow
+/* Slides
 * --------------------------------------- */
-/*.slideshow_slide {*/
-    /*!*background-size: cover;*!*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*z-index: -1;*/
-/*}*/
-
-img {
-    width: 100%;
-    height: auto;
-}
 
 #slide1 {
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*background-image: url(../imgs/volleyball3.jpg);*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
+    background-image: url(../imgs/volleyball2.jpg);
 }
 
 #slide2 {
+    background-image: url(../imgs/volleyball1.jpg);
 }
 
 #slide3 {
+    background-image: url(../imgs/volleyball3.jpg);
 }
 
 #slide4 {
+    background-image: url(../imgs/volleyball4.jpg);
 }
 
 #slide5 {
+    background-image: url(../imgs/volleyball5.jpg);
 }
 
 #slideshow {
@@ -184,4 +187,12 @@ img {
 
 #slideshow > div {
     position: absolute;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 50px;
+}
+
+.fp-controlArrow.fp-next {
+    right: 50px;
 }
